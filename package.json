@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx @google-cloud/functions-framework --target=unlegalese",
-    "dev": "npm-watch build"
+    "dev": "npm-watch start"
   },
   "watch": {
     "start": "*.js"
