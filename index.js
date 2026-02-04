@@ -2,14 +2,22 @@ const express = require('express');
 const functions = require('@google-cloud/functions-framework');
 const OpenAI = require("openai");
 
-const client = new OpenAI();
 const unlegalese = express();
 unlegalese.use(express.json());
+
+let client;
+function getClient() {
+    if (!client) {
+        client = new OpenAI();
+    }
+    return client;
+}
 
 unlegalese.post('/unlegalese/stream', async (req, res) => {
 
     try {
-        const response = await client.responses.create({
+        const openaiClient = getClient();
+        const response = await openaiClient.responses.create({
             model: "gpt-5-nano",
             input: "Write a one-sentence bedtime story about a unicorn."
         });
