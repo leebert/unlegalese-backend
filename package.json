@@ -1,0 +1,23 @@
+{
+  "name": "unlegalese-backend",
+  "version": "1.0.0",
+  "description": "Backend for Unlegalese prototype",
+  "license": "MIT",
+  "author": "Leebert",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @google-cloud/functions-framework --target=unlegalese",
+    "watch": "npm-watch build"
+  },
+  "watch": {
+    "build": "*.js"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^5.0.0",
+    "openai": "^6.17.0"
+  },
+  "devDependencies": {
+    "npm-watch": "^0.13.0"
+  }
+}
