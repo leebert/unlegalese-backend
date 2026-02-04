@@ -7,11 +7,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "build": "npx @google-cloud/functions-framework --target=unlegalese",
-    "watch": "npm-watch build"
+    "start": "npx @google-cloud/functions-framework --target=unlegalese",
+    "dev": "npm-watch build"
   },
   "watch": {
-    "build": "*.js"
+    "start": "*.js"
   },
   "dependencies": {
     "@google-cloud/functions-framework": "^5.0.0",
