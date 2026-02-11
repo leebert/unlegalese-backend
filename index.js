@@ -173,11 +173,11 @@ unlegalese.post('/unlegalese/structured/stream', async (req, res) => {
                             },
                             plain_language_version: {
                                 type: "string",
-                                description: "Ultra-simplified version for quick reading"
+                                description: "Two or three sentence simplified version for quick reading"
                             },
                             key_points: {
                                 type: "array",
-                                description: "Key points extracted from the legal text",
+                                description: "Two or three most important key points extracted from the legal text",
                                 items: {
                                     type: "object",
                                     properties: {
@@ -190,7 +190,7 @@ unlegalese.post('/unlegalese/structured/stream', async (req, res) => {
                             },
                             concerns: {
                                 type: "array",
-                                description: "Potential concerns or red flags",
+                                description: "Two or three most important potential concerns or red flags",
                                 items: { type: "string" }
                             }
                         },
