@@ -1,2 +1,2 @@
 # unlegalese-backend
-Backend for Unlegalese prototype
+Backend for [Legal*ease* prototype](https://github.com/leebert/unlegalese/)
