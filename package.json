@@ -1,7 +1,7 @@
 {
-  "name": "unlegalese-backend",
+  "name": "legalease-backend",
   "version": "1.0.0",
-  "description": "Backend for Unlegalese prototype",
+  "description": "Backend for Legalease prototype",
   "license": "MIT",
   "author": "Leebert",
   "type": "commonjs",
